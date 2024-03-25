@@ -13,7 +13,6 @@ export class StudentService {
   }
 
   async InsertStudent(createStudentDto: StudentDTO): Promise<Student> {
-    console.log(createStudentDto);
     const createdStudent = new this.studentModel(createStudentDto);
     return createdStudent.save();
   }

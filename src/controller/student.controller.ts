@@ -1,6 +1,6 @@
 import { Controller, Get, Put, Delete, Post, Param, Body } from '@nestjs/common';
+import { StudentService } from 'src/services/student.services';
 import { StudentDTO } from '../DTO/student.dto';
-import { StudentService } from '../services/student.services';
 
 @Controller('student')
 export class StudentController {
